@@ -1,3 +1,6 @@
+import nltk
+nltk.download('punkt_tab')
+
 import os
 from dotenv import load_dotenv
 import asyncio

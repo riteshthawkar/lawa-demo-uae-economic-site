@@ -184,8 +184,6 @@ async def websocket_endpoint(websocket: WebSocket):
                         {"input": question, 'language': language},
                         config={"configurable": {"session_id": session_id}}
                     ):
-                        if "context" in chunk:
-                            context = chunk['context']
                         # Send each chunk to the client
                         if "answer" in chunk:
                             complete_response += chunk['answer']

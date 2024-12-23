@@ -1,0 +1,5 @@
+*.ipynb
+static/*
+Dockerfile
+.env
+__pycache__/*
